@@ -213,33 +213,3 @@ This project helps understand:
 Nikhil M B  
 
 Embedded Linux | C Programming | DevSecOps  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
