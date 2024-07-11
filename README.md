@@ -58,7 +58,7 @@ Message Queue  <---->  Controller Daemon
 
 
 
-## 📂 Repository Layout
+## Repository Layout
 
 ```text
 linux-task-manager/
@@ -77,6 +77,9 @@ linux-task-manager/
 ├── docs/        
 ├── Makefile    
 └── README.md           
+```
+
+
 
 ##  Build Instructions
 
