@@ -57,51 +57,33 @@ Message Queue  <---->  Controller Daemon
 
 
 
-## Repository Layout 
 
+## 📂 Repository Layout
+
+```text
 linux-task-manager/
-├── include/
-├── src/
-│ ├── ipc/
-│ ├── process/
-│ ├── signal/
-│ ├── thread/
-│ └── utils/
-├── client/
-├── config/
-├── logs/
-├── systemd/
-├── debian/
-├── docs/
-├── Makefile
-└── README.md
-
-
-
-## Repository Layout
-
-linux-task-manager/
-├── include/
-├── src/
-│   ├── ipc/
-│   ├── process/
-│   ├── signal/
-│   ├── thread/
-│   └── utils/
-├── client/
-├── config/
-├── logs/
-├── systemd/
-├── debian/
-├── docs/
-├── Makefile
-└── README.md
-
+├── include/            
+├── src/               
+│   ├── ipc/          
+│   ├── process/     
+│   ├── signal/     
+│   ├── thread/    
+│   └── utils/         
+├── client/           
+├── config/          
+├── logs/           
+├── systemd/       
+├── debian/       
+├── docs/        
+├── Makefile    
+└── README.md           
 
 ##  Build Instructions
 
 ### Prerequisites
 
+
+```bash
 sudo apt install build-essential
 
 
@@ -110,6 +92,8 @@ sudo apt install build-essential
 
 From project root:
 
+
+```bash
 make
 
 This generates:
@@ -123,10 +107,13 @@ taskctl   → client CLI
 
 ### Start Controller
 
+
+```bash
 sudo ./taskmgr
 
 or using systemd:
 
+```bash
 sudo systemctl start taskmgr
 
 
@@ -135,18 +122,24 @@ sudo systemctl start taskmgr
 
 Add task:
 
+```bash
 ./taskctl add "ls -l"
 
 Check status:
 
+```bash
 ./taskctl status
 
 Kill worker:
 
+
+```bash
 ./taskctl kill 2
 
 View history:
 
+
+```bash
 ./taskctl history
 
 
