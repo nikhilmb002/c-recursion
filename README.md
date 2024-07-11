@@ -88,7 +88,7 @@ linux-task-manager/
 
 ```bash
 sudo apt install build-essential
-
+```
 
 
 ### Compile
@@ -98,6 +98,7 @@ From project root:
 
 ```bash
 make
+```
 
 This generates:
 
@@ -113,12 +114,13 @@ taskctl   → client CLI
 
 ```bash
 sudo ./taskmgr
+```
 
 or using systemd:
 
 ```bash
 sudo systemctl start taskmgr
-
+```
 
 
 ### Client Commands
@@ -127,24 +129,27 @@ Add task:
 
 ```bash
 ./taskctl add "ls -l"
+```
 
 Check status:
 
 ```bash
 ./taskctl status
+```
 
 Kill worker:
 
 
 ```bash
 ./taskctl kill 2
+```
 
 View history:
 
 
 ```bash
 ./taskctl history
-
+```
 
 
 ## IPC Design
